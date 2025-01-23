@@ -37,38 +37,7 @@
 
 ---
 
-# Overview
-This is the 3 steps multi-person action recognition pipeline. But it achieves real time performance with 33 FPS for whole action recognition pipeline with 1 person video. The steps include:
-1. pose estimation with [trtpose](https://github.com/NVIDIA-AI-IOT/trt_pose)
-2. people tracking with [deepsort](https://github.com/mikel-brostrom/Yolov5_DeepSort_Pytorch)
-3. action classifier with [dnn](https://github.com/felixchenfy/Realtime-Action-Recognition#diagram)
 
-> Overview of Action Recognition Pipeline  
-![](assets/Program_flow.png)
-
-
-Action classifier is used from [this repo](https://github.com/felixchenfy/Realtime-Action-Recognition#diagram) and his dataset also.
-
-# Inference Speed
-Tested PC specification
-
-- **OS**: Ubuntu 18.04
-- **CPU**: Ryzen 5 3600 @3.766GHz
-- **GPU**:  RTX 2060
-- **CUDA**: 10.2
-- **TensorRT**: 7.1.3.4
-
-:exclamation: Below table is based on a single person video. For multi person testing, the result may vary.
-
-| Pipeline Step |  Model  | Step's Model Input Size (H, W) | `Pytorch` FPS| `TensorRT` FPS|
-| -  | - | - | - | - |
-| Pose Estimation  | densenet121 |(256x256) | 25 fps  | 38 fps |
-||
-| Pose Estimation + Tracking  | densenet121 + deepsort `siamese` reid | (256x256) + (256x128) | 22 fps | 34 fps
-| Pose Estimation + Tracking  | densenet121 + deepsort `wideresnet` reid | (256x256) + (256x128) | 22 fps | 31 fps
-||
-| Pose Estimation + Tracking + Action | densenet121 + deepsort `siamese` reid + dnn | (256x256) + (256x128) + (--) | 21 fps | 33 fps |
-| Pose Estimation + Tracking + Action | densenet121 + deepsort `wideresnet` reid + dnn | (256x256) + (256x128) + (--) | 21 fps | 30 fps|
 
 
 # Installation
