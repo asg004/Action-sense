@@ -1,44 +1,4 @@
-# Action Sense  
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=CV-ZMH.human-action-recognition)
-
-
-
-> Pretrained actions, total 9 classes : **['stand', 'walk', 'run', 'jump', 'sit', 'squat', 'kick', 'punch', 'wave']**
-
-<table style="width:100%; table-layout:fixed;">
- <tr>
-    <td><img width="448" height="224" src="assets/aung_la.gif"></td>
-    <td><img width="448" height="224" src="assets/aung_la_debug.gif"></td>
- </tr>
- <tr>
-    <td align="center"><font size="1">Fight scene demo<font></td>
-    <td align="center"><font size="1">Fight scene debug demo<font></td>   
- </tr>
- <tr>
-    <td><img width="448" height="224" src="assets/fun_theory.gif"></td>
-    <td><img width="448" height="224" src="assets/fun_theory_debug.gif"></td>
- </tr>
- <tr>
-    <td align="center"><font size="1">Street scene demo<font></td>
-    <td align="center"><font size="1">Street scene debug demo<font></td>   
- </tr>
- <tr>
-    <td><img width="448" height="224" src="assets/street_walk.gif"></td>
-    <td><img width="448" height="224" src="assets/street_walk_debug.gif"></td>
- </tr>
- <tr>
-    <td align="center"><font size="1">Street walk demo<font></td>
-    <td align="center"><font size="1">Street walk debug demo<font></td>   
- </tr>
-</table>
-
-
-
-
----
-
-
-
+# Action Sense 
 
 # Installation
 
@@ -205,12 +165,6 @@ cd src && python prepare_mars.py --root <your dataset root> --train_percent 0.8 
 cd src && python train_reid.py --config ../configs/train_reid.yaml
 ```
 ---
-# References
-- [realtime action recognition](https://github.com/felixchenfy/Realtime-Action-Recognition)
-- [nvidia trt_pose](https://github.com/NVIDIA-AI-IOT/trt_pose/blob/master/README.md)
-- [DeepSort](https://github.com/nwojke/deep_sort)
-- [Pytorch Deepsort YOLOv5](https://github.com/mikel-brostrom/Yolov5_DeepSort_Pytorch)
-- [Aligned Reid Network](https://github.com/huanghoujing/AlignedReID-Re-Production-Pytorch)
 
 # TODO  
 - [x] Add different reid network used in DeepSort
