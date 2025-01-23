@@ -1,14 +1,7 @@
-# Simple Real Time Multi Person Action Recognition  
+# Action Sense  
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=CV-ZMH.human-action-recognition)
 
-# News
-:boom: Added tensorrt conversion script for reid models.
 
-:boom: Added reid models which are trained on mars and market1501 datasets.
-
-:boom: Added trained weight of **siamesenet** networks and training script for reid model. They are used in cosine metric learnings of deep sort pipeline.
-
-:boom: Added debug-tracker flag to `demo.py` script for visualizing tracker bboxes and keypoints bboxes. So, you can easily learn by visualizing how the tracker algorithm works.
 
 > Pretrained actions, total 9 classes : **['stand', 'walk', 'run', 'jump', 'sit', 'squat', 'kick', 'punch', 'wave']**
 
@@ -40,26 +33,7 @@
 </table>
 
 
-Table of Contents
-=================
 
-* [News](#news)
-* [Overview](#overview)
-* [Inference Speed](#inference-speed)
-* [Installation](#installation)
-   * [Step 1 - Install Dependencies](#step-1---install-dependencies)
-   * [Step 2 - Install <a href="https://github.com/NVIDIA-AI-IOT/torch2trt">torch2trt</a>](#step-2---install-torch2trt)
-   * [Step 3 - Install trt_pose](#step-3---install-trt_pose)
-* [Run Quick Demo](#run-quick-demo)
-   * [Step 1 - Download the Pretrained Models](#step-1---download-the-pretrained-models)
-
-   * [Step 2 - TensorRT Conversion (Optional)](#step-2---tensorrt-conversion-optional)
-   * [Step 3 - Run Demo.py](#step-3---run-demopy)
-* [Training](#training)
-   * [Train Action Classifier Model](#train-action-classifier-model)
-   * [Train reID Model for DeepSort Tracking](#train-reid-model-for-deepsort-tracking)
-* [References](#references)
-* [TODO](#todo)
 
 ---
 
